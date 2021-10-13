@@ -4,14 +4,16 @@ class Musician():
         
 
 class Band(Musician):
-    def __init__(self,name,member):
+    def __init__(self,name,members):
 
         self.name=name
-        self.member=member
+        self.members=members
     def play_solos():
-        pass    
+        pass  
+    # def get_instrument(self): 
+    #     return self.members  
 
-class Guitarist(Band):
+class Guitarist(Musician):
     
     def __init__(self,name):
         self.name=name
@@ -22,7 +24,7 @@ class Guitarist(Band):
     def get_instrument(self):
         return "guitar"
 
-class Drummer(Band):
+class Drummer(Musician):
     def __init__(self,name):
         self.name=name
 
@@ -33,7 +35,7 @@ class Drummer(Band):
         return f"Drummer instance. Name = {self.name}"    
     def get_instrument(self): 
         return "drums"
-class Bassist(Band):
+class Bassist(Musician):
     def __init__(self,name):
         self.name=name
 
