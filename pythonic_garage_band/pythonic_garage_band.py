@@ -4,10 +4,10 @@ class Musician():
         
 
 class Band(Musician):
-    def __init__(self,name):
+    def __init__(self,name,member):
 
         self.name=name
-
+        self.member=member
     def play_solos():
         pass    
 
