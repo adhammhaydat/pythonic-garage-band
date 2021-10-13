@@ -30,5 +30,12 @@ class Drummer(Band):
 
     def __repr__(self):
         return f"Drummer instance. Name = {self.name}"    
-class Bassist:
-    pass        
+class Bassist(Band):
+    def __init__(self,name):
+        self.name=name
+
+    def __str__(self):
+        return f"My name is {self.name} and I play bass"
+
+    def __repr__(self):
+        return f"Bassist instance. Name = {self.name}"  
