@@ -10,7 +10,8 @@ class Band(Musician):
         self.members=members
 
     def play_solos(self):
-         return self.name     
+        to_list=["face melting guitar solo","bom bom buh bom","rattle boom crash"]
+        return to_list    
 
     
 
